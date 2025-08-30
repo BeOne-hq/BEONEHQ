@@ -1,13 +1,20 @@
 const money = (n) => `$${Number(n||0).toLocaleString()}`;
 
 
+import { promises as fs } from 'fs';
+import path from 'path';
+
 export async function getServerSideProps() {
-  // Reads public/brief.json on each request — no env vars, no services
-  const base = process.env.NEXT_PUBLIC_BASE_URL || '';
-  const res = await fetch(`${base}/brief.json`).catch(()=>null);
-  const data = res && res.ok ? await res.json() : null;
-  return { props: { data } };
+  try {
+    const filePath = path.join(process.cwd(), 'public', 'brief.json');
+    const raw = await fs.readFile(filePath, 'utf8');
+    const data = JSON.parse(raw);
+    return { props: { data } };
+  } catch (e) {
+    return { props: { data: null, error: String(e) } };
+  }
 }
+
 
 export default function Home({ data }) {
   if (!data) return <main style={{padding:24}}>Add <code>public/brief.json</code> to see your brief.</main>;
