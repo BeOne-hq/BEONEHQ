@@ -1,5 +1,6 @@
 const money = (n) => `$${Number(n||0).toLocaleString()}`;
 
+
 export async function getServerSideProps() {
   // Reads public/brief.json on each request — no env vars, no services
   const base = process.env.NEXT_PUBLIC_BASE_URL || '';
