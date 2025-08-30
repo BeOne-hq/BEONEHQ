@@ -1,0 +1,30 @@
+{
+  "brand": { "name": "Be One", "tagline": "One movement. Every solution." },
+  "hero": {
+    "headline": "Be One — Tech + Impact for a Better World",
+    "sub": "We build AI-driven systems that turn purpose into measurable outcomes.",
+    "ctaText": "Work with Be One",
+    "ctaLink": "mailto:hello@beone.example",
+    "secondaryText": "See case studies",
+    "secondaryLink": "/portal"
+  },
+  "valueProps": [
+    { "title": "Strategy to Impact", "desc": "From idea to deployment, fast." },
+    { "title": "Data & AI", "desc": "Automations, insights, measurable ROI." },
+    { "title": "Movement Design", "desc": "Brand, content, community — aligned." }
+  ],
+  "sponsors": [
+    { "name": "DelightTech", "tier": "Strategic" },
+    { "name": "GreenRoad", "tier": "Sustainability" }
+  ],
+  "testimonials": [
+    { "name": "A. Khan", "quote": "Be One delivered clarity and momentum day one." }
+  ],
+  "newsletter": {
+    "enabled": true,
+    "endpoint": "https://formspree.io/f/your-id", 
+    "placeholder": "Your email",
+    "button": "Join updates"
+  },
+  "footer": { "note": "© Be One. All rights reserved." }
+}
