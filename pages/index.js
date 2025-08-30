@@ -1,6 +1,10 @@
 // --- B1 HQ • Executive Brief (polished UI, no external deps) ---
 import { promises as fs } from 'fs';
 import path from 'path';
+// HQ quick-edit links (adjust if your repo org/name changes)
+const REPO = 'https://github.com/BeOne-hq/BEONEHQ';
+const EDIT_BRIEF = `${REPO}/edit/main/public/brief.json`;
+const EDIT_LANDING = `${REPO}/edit/main/public/landing.json`;
 
 export async function getServerSideProps() {
   try {
