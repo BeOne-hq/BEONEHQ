@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    { "title": "Finalize scaling plan", "priority": "high", "assignee": "You", "due_date": "2025-08-30", "status": "todo" },
+    { "title": "Branding & logo lock", "priority": "high", "assignee": "You", "due_date": "2025-08-30", "status": "todo" }
+  ],
+  "content": [
+    { "title": "B1 HQ milestone", "platform": "Instagram", "status": "scheduled", "publish_date": "2025-08-30" }
+  ],
+  "donationsToday": 0,
+  "mrr": 4250,
+  "sponsors": [
+    { "name": "DelightTech", "status": "negotiating", "contract_value": 15000 },
+    { "name": "GreenRoad", "status": "prospect", "contract_value": 5000 }
+  ],
+  "grants": [
+    { "name": "NATO DIANA 2025", "deadline": "2025-09-10", "owner": "You", "next_action": "Finalize annexes", "status": "drafting" },
+    { "name": "CWTA Workforce", "deadline": "2025-09-18", "owner": "You", "next_action": "Scaling model", "status": "in review" }
+  ],
+  "kpis": { "webDelta": 6, "socialDelta": -3, "emailDelta": 4, "leadsDelta": 1 },
+  "memberships": [
+    { "member": "Jack Brown", "status": "at-risk", "monthly_fee": 60, "failed_payment_count": 3 },
+    { "member": "Carmen Smith", "status": "active", "monthly_fee": 25, "failed_payment_count": 2 }
+  ]
+}
